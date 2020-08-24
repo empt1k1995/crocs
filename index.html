@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crocs</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/media.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+		<!-- Header  section Start -->
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__inner">
+				<img class="logo" width="200" src="img/logo.svg" alt="">
+				<nav class="nav">
+					<a class="nav__link" data-scroll="#intro" href="#">Главная</a>
+					<a class="nav__link" data-scroll="#services" href="#">Магазин</a>
+					<a class="nav__link" data-scroll="#delivery" href="#">Стоимость и сроки доставки</a>
+					<a class="nav__link" data-scroll="#footer" href="#">Контакти</a>
+				</nav>
+				<!-- Кнопка для мобільной навігації -->
+				<div id="menu-togle" class="menu-icon">
+					<div class="menu-icon-line"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header  section End -->
+
+	<!-- Intro section Start -->
+	<div class="intro" id="intro">
+		<div class="container">
+			<div class="intro__inner">
+				<div class="intro__tittle">
+					<h1>Обувь CROCS в Украине</h1>
+				</div>
+				<div class="intro__suptittle">
+					<h3>Crocs, знаменитый обувной бренд, отныне в Украине</h3>
+				</div>
+				<a class="intro__button" data-scroll="#services" href="#">Узнать больше</a>
+			</div>
+		</div>
+	</div>
+	<!-- Intro section End -->
+
+	<!-- Services section Start -->
+	<div class="services" id="services">
+		<div class="container">
+			<div class="services__inner">
+				<div class="services_item">
+					<div class="services__tittle">
+						<h2 class="serv__tittle">Летняя колекция женской обуви </h2>
+					</div>
+					<div class="shop_items">
+						<div class="shop-item">
+							<img class="shop-image" src="img/1.jpg" alt="">
+							<div class="shop-contant">
+								<div class="shops-brand">Оранжевые сабо CROCS Classic</div>
+								<div class="shops-price">1200 грн</div>
+								<div class="wrapper">
+									<button  class="shop-btn">Заказать</button>
+								</div>
+							</div>
+						</div>
+						<div class="shop-item">
+							<img class="shop-image" src="img/7.jpg" alt="">
+							<div class="shop-contant">
+								<div class="shops-brand">Черные сабо для работы CROCS Bistro Peppers Clog</div>
+								<div class="shops-price">1600 грн</div>
+								<div class="wrapper">
+									<button  class="shop-btn">Заказать</button>
+								</div>
+							</div>
+						</div>
+						<div class="shop-item">
+							<img class="shop-image" src="img/9.jpg" alt="">
+							<div class="shop-contant">
+								<div class="shops-brand">Женские белые сабо CROCS Classic Printed Floral Clog</div>
+								<div class="shops-price">2150 грн</div>
+								<div class="wrapper">
+									<button  class="shop-btn">Заказать</button>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				<div class="services_item">
+					<div class="services__tittle">
+						<h2 class="serv__tittle">Летняя колекция мужской обуви </h2>
+					</div>
+					<div class="shop_items">
+						<div class="shop-item">
+							<img class="shop-image" src="img/6.jpg" alt="">
+							<div class="shop-contant">
+								<div class="shops-brand">Темно-синие сабо CROCS Crocband™</div>
+								<div class="shops-price">1550 грн</div>
+								<div class="wrapper">
+									<button  class="shop-btn">Заказать</button>
+								</div>
+							</div>
+						</div>
+						<div class="shop-item">
+							<img class="shop-image" src="img/4.jpg" alt="">
+							<div class="shop-contant">
+								<div class="shops-brand">Черные сабо CROCS Bayaband Seasonal Printed Clog</div>
+								<div class="shops-price">2000 грн</div>
+								<div class="wrapper">
+									<button  class="shop-btn">Заказать</button>
+								</div>
+							</div>
+						</div>
+						<div class="shop-item">
+							<img class="shop-image" src="img/5.jpg" alt="">
+							<div class="shop-contant">
+								<div class="shops-brand ">Мужские темно-синие сандалии CROCS Men’s Swiftwater™ Mesh Wave</div>
+								<div class="shops-price last-price">2150 грн</div>
+								<div class="wrapper">
+									<button  class="shop-btn">Заказать</button>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="popup" id="popUp">
+						<form action="" method="get" class="popup__content" autocomplete="off">
+
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="http://www.crocs.im">
+							<input type="hidden" name="admin_email" value="maxim.rain@gmail.com">
+							<input type="hidden" name="form_subject" value="popup-form">
+							<!-- END Hidden Required Fields -->
+
+							<button id="closeToggle" class="close-button">&times;</button>
+							<h3 class="poput_tittle">Введите ваши данные</h3>
+							<label for="username">Введите имя:</label>
+							<input id="username" name="name" type="name" value="" >
+							<label for="tel">Введите номер телефона</label>
+							<input id ="tel" type="tel" name="tel" value="">
+							<label for="email">Введите e-mail</label>
+							<input id="email" name="email" type="email" value="">
+							<input type="submit" class="button__pop">
+						</form>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<!-- Services section End -->
+	<!-- Delivery section start -->
+	<div class="delivery" id="delivery">
+		<div class="container">
+			<div class="delivery__inner">
+				<h2 class="delivery__tittle">Стоимость и сроки доставки</h2>
+				<div class="delivery__items">
+					<div class="delivery_item">
+						<img class="delivery_icon" src="img/117329.png" alt="">
+						<div class="delivery_contant">
+							<div class="delivery_suptittle">Курьеом по Киеву</div>
+							<ul>
+								<li> От 1-го рабочего дня* - 100 грн.</li>
+								<li>Экспресс-доставка в течение 3 часов* –300 грн.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="delivery_item">
+						<div class="delivery_courier">
+							<img class="delivery_icon" src="img/250.png" alt="">
+							<div class="delivery_contant">
+							<div class="delivery_suptittle">Новая Почта</div>
+							<ul>
+								<li>Доставка по регионам Украины - согласно тарифам перевозчика (от 2-х рабочих дней)</li>
+								<li>Комиссия за наложенный платеж взымается с получателя в размере 2%+20 грн.</li>
+								<li>Доставка по Киеву осуществляется курьером в пн.-пт. с 09:00 до 18:00.</li>
+								<li> Доставка по регионам Украины осуществляется Новой Почтой.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer_item">
+					<img class="logo" width="200" src="img/logo.svg" alt="">
+				</div>
+				<div class="footer_item">
+					<div class="footer_work">
+						<h3 class="footer_suptittle"> Время работы: </h3>
+						<p class="footer_text" >понедельник - пятница с 09:00 до 18:00</p>
+					</div>
+				</div>
+				<div class="footer_item">
+					<div class="footer_network">
+						<ul class="inform-link">
+							<li>E-mail: <a class="link-text" href="crocs.client@gmail.com">crocs.client@gmail.com</a></li>
+						</ul>
+						<ul class="inform-link">
+							<li>Viber <a class="link-text" href="tel:+380669637118">+380669637118</a></li>
+						</ul>
+						<ul class="inform-link">
+							<li>Facebook <a class="link-text" href="https://www.facebook.com/Crocs.im">https://www.facebook.com/Crocs.im</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src='js/main.js'></script>
+</body>
+</html>
+
+					
